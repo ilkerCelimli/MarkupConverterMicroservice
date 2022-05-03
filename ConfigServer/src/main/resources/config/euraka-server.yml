@@ -1,0 +1,16 @@
+
+server:
+  port: 8761
+
+spring:
+  application:
+    name: Euraka-server
+  config:
+    import: "optional:http/localhost:8888/euraka-server.yml"
+
+euraka:
+  client:
+    registerWithEuraka: false
+    fetchRegistery: true
+    server:
+      waitTimeInMsWhenSyncEmpty: 0

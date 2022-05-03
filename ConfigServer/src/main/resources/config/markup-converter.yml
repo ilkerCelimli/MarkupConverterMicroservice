@@ -1,0 +1,16 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: markup-converter
+  datasource:
+    hikari:
+      username: admin
+      password: 12345
+    url: jdbc:postgresql://localhost:10000/MarkupConverter
+
+euraka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
