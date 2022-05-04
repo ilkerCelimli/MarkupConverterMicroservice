@@ -43,6 +43,7 @@ public class ConverterServiceImpl implements ConverterService {
         Marks m = new Marks();
         m.setMarkString(mark.getRequest());
         m.setHtmlString(converter(mark.getRequest()));
+        m.setCreatedDate(new Date());
         Marks temp = marksRepository.save(m);
         if (temp.getId() == 0L) {
             SQLException e = new SQLException();
