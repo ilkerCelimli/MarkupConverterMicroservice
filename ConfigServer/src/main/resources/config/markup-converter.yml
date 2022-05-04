@@ -9,6 +9,10 @@ spring:
       username: admin
       password: 12345
     url: jdbc:postgresql://localhost:10000/MarkupConverter
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
 
 euraka:
   client:
